@@ -4,15 +4,15 @@ title: >-
   for the sonification and cross-modal validation of GPCR molecular
   dynamics
 message: >-
-  If you use this software or its outputs, please cite the accompanying
-  manuscript and the Zenodo deposit listed below.
+  If you use this software or its outputs, please cite the Zenodo
+  deposit listed below.
 type: software
 authors:
-  - given-names: "[YOUR FIRST NAME]"
-    family-names: "[YOUR LAST NAME]"
-    email: "[name@institution.edu]"
-    affiliation: "[Department, Institution, City, Country]"
-    orcid: "https://orcid.org/[0000-0000-0000-0000]"
+  - given-names: "Ekrem"
+    family-names: "Yasar"
+    email: "eyasar@erzincan.edu.tr"
+    affiliation: "Department of Biophysics, Erzincan Binali Yildirim University, Erzincan, Turkey"
+    orcid: "https://orcid.org/0000-0003-0575-7267"
 identifiers:
   - type: doi
     value: 10.5281/zenodo.PLACEHOLDER
@@ -45,18 +45,3 @@ keywords:
 license: MIT
 version: 1.0.0
 date-released: "2026-XX-XX"
-
-# --- Manuscript to cite alongside the software ---
-preferred-citation:
-  type: article
-  title: >-
-    Auditory Signatures of β2-Adrenergic Receptor Activation: a
-    Sonification Framework for GPCR Molecular Dynamics
-  authors:
-    - given-names: "[YOUR FIRST NAME]"
-      family-names: "[YOUR LAST NAME]"
-      affiliation: "[Department, Institution, City, Country]"
-      orcid: "https://orcid.org/[0000-0000-0000-0000]"
-  journal: "Journal of Chemical Information and Modeling"
-  year: 2026
-  doi: "10.1021/acs.jcim.PLACEHOLDER"

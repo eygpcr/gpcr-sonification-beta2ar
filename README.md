@@ -103,24 +103,6 @@ Update the `PROJECT_DIR` variable at the top of each notebook to point to your l
 | **04** Videos & HTML player | `outputs/video/` — silent MP4 per state, audio MP4 per (state × instrument), side-by-side pair MP4; `outputs/presentation_bundle/` — self-contained HTML + assets |
 | **05** Cross-modal validation | `outputs/tables/` — MD/audio MWU tests, binary + 3-class classifier results, LOIO, MD baseline, information-retention ratio, canonical correlation; `outputs/figures/` — confusion matrices, LOIO grid, CCA bars, audio PCA |
 
-## Reproducing the manuscript figures and tables
-
-Run notebooks 01 → 05 in order, then check `outputs/figures/` and `outputs/tables/` for files referenced in the manuscript. Random seeds are fixed (`random_state=42`) so classification numbers reproduce exactly.
-
-| Manuscript artefact | Source file (Drive) |
-|---|---|
-| Table 2 | `outputs/tables/feature_summary_statistics.csv` |
-| Table 3 | `outputs/tables/md_statistical_tests.csv` |
-| Table 4 Panel A | `outputs/tables/binary_classification_results.csv` |
-| Table 4 Panel B | `outputs/tables/loio_binary_classification_results.csv` |
-| Table 4 Panel C | `outputs/tables/cca_md_audio.csv` |
-| Figure 2 | `outputs/figures/fig_pair_*_features_distributions.{png,pdf,svg}` |
-| Figure 3 | `outputs/figures/fig_pair_*_spectrograms_piano.{png,pdf,svg}` |
-| Figure 4 | `outputs/figures/fig_pair_activation_cross_instrument_grid.{png,pdf,svg}` |
-| Figure 5 | `outputs/figures/fig_classification_confusion_per_pair.{png,pdf,svg}` |
-| Figure 6 | `outputs/figures/fig_cca_md_audio.{png,pdf,svg}` |
-| Figure 7 | `outputs/figures/fig_classification_loio_per_pair.{png,pdf,svg}` |
-
 ## Data availability
 
 - **Raw MD trajectories**: publicly available at [GPCRMD](https://gpcrmd.org) under Dynamic IDs 11, 116, 117. **Not redistributed in this repository** — please download directly from GPCRMD.
