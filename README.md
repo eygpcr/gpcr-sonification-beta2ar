@@ -1,10 +1,12 @@
-# GPCR Sonification — β2-Adrenergic Receptor
+# A Sonification Framework for GPCR Molecular Dynamics
 
-Open-source pipeline for **sonifying** the molecular dynamics (MD) of the β2-adrenergic receptor (β2AR), and for **quantitatively evaluating** whether the rendered audio preserves the underlying MD-state information through cross-modal classification and canonical correlation analysis.
+Open-source, end-to-end pipeline for **sonifying G-protein-coupled receptor (GPCR) molecular dynamics (MD)** and **quantitatively evaluating** whether the rendered audio preserves the underlying MD-state information through cross-modal classification and canonical correlation analysis.
+
+The framework is system-agnostic — only residue-selection strings change between receptors. We demonstrate it on the β2-adrenergic receptor (β2AR) as a proof of concept using three reference trajectories spanning its activation continuum (inactive, active apo, active + orthosteric agonist) from the GPCRMD repository.
 
 Companion repository for the manuscript:
 
-> **Auditory Signatures of β2-Adrenergic Receptor Activation: a Sonification Framework for GPCR Molecular Dynamics**
+> **A Sonification Framework for GPCR Molecular Dynamics: Auditory Signatures of β2-Adrenergic Receptor**
 
 | Notebook | Open in Colab |
 |---|---|
@@ -22,7 +24,7 @@ Companion repository for the manuscript:
 
 ## Overview
 
-Three publicly available GPCRMD β2AR trajectories — `inactive` (Dynamic ID **11**), `active` apo (**116**), and `active + agonist` (**117**) — are passed through a five-stage pipeline:
+The framework consists of a five-stage pipeline, applicable to any GPCR (or any allosteric MD system) by adjusting the residue-selection strings. The β2AR demonstration in this repository uses three publicly available GPCRMD trajectories — `inactive` (Dynamic ID **11**), `active` apo (**116**), and `active + agonist` (**117**):
 
 ```
 GPCRMD trajectories
@@ -45,7 +47,7 @@ GPCRMD trajectories
             statistical tests, Random Forest classifier, LOIO, CCA
 ```
 
-## Key results (β2AR, this work)
+## Demonstration results (β2AR proof of concept)
 
 |                                   | Activation pair (inactive vs active) | Ligand pair (active vs active + ligand) |
 |---|---|---|

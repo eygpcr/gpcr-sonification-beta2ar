@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 title: >-
-  GPCR Sonification — β2-Adrenergic Receptor: an open-source pipeline
-  for the sonification and cross-modal validation of GPCR molecular
-  dynamics
+  A Sonification Framework for GPCR Molecular Dynamics —
+  open-source pipeline with cross-modal classification validation,
+  demonstrated on the β2-adrenergic receptor
 message: >-
   If you use this software or its outputs, please cite the Zenodo
   deposit listed below.
@@ -20,22 +20,25 @@ identifiers:
 repository-code: "https://github.com/eygpcr/gpcr-sonification-beta2ar"
 url: "https://github.com/eygpcr/gpcr-sonification-beta2ar"
 abstract: >-
-  An open-source pipeline that maps activation-related geometric
-  features extracted from β2-adrenergic receptor (β2AR) molecular
-  dynamics trajectories onto musical parameters, renders the result as
-  MIDI / WAV audio through three timbres, builds synchronised protein-
-  cartoon videos and an interactive HTML player, and computationally
-  validates information preservation by Random Forest cross-modal
-  classification, leave-one-instrument-out generalisation, and
-  canonical correlation analysis between the MD and audio feature
-  spaces. Applied as a proof of concept to three GPCRMD β2AR
-  trajectories (inactive, active apo, active + orthosteric agonist),
-  the pipeline transfers to other GPCRs and allosteric MD systems
-  without code changes beyond residue selection.
+  An end-to-end open-source pipeline that maps activation-related
+  geometric features extracted from G-protein-coupled receptor (GPCR)
+  molecular dynamics (MD) trajectories onto musical parameters,
+  renders the result as MIDI / WAV audio through multiple timbres,
+  builds synchronised protein-cartoon videos and an interactive HTML
+  player, and computationally validates information preservation by
+  Random Forest cross-modal classification, leave-one-instrument-out
+  generalisation, and canonical correlation analysis between the MD
+  and audio feature spaces. The framework is system-agnostic and
+  transfers to any GPCR (or any allosteric MD system) by adjusting
+  the residue-selection strings only. We demonstrate it on three
+  GPCRMD β2-adrenergic receptor reference trajectories spanning the
+  activation continuum (inactive, active apo, active + orthosteric
+  agonist) as a proof of concept.
 keywords:
   - sonification
-  - molecular dynamics
   - GPCR
+  - G-protein-coupled receptor
+  - molecular dynamics
   - β2-adrenergic receptor
   - cross-modal classification
   - canonical correlation analysis
