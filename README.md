@@ -18,7 +18,7 @@ Companion repository for the manuscript:
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.PLACEHOLDER.svg)](https://doi.org/10.5281/zenodo.PLACEHOLDER)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20343439.svg)](https://doi.org/10.5281/zenodo.20343439)
 
 ---
 
@@ -108,7 +108,7 @@ Update the `PROJECT_DIR` variable at the top of each notebook to point to your l
 ## Data availability
 
 - **Raw MD trajectories**: publicly available at [GPCRMD](https://gpcrmd.org) under Dynamic IDs 11, 116, 117. **Not redistributed in this repository** — please download directly from GPCRMD.
-- **Processed data, audio renders, videos, figures, and tables**: archived on Zenodo at [DOI placeholder]. Mirror of this repository at each tagged release.
+- **Processed data, audio renders, videos, figures, and tables**: archived on Zenodo at 10.5281/zenodo.20343439. Mirror of this repository at each tagged release.
 
 ## Citation
 
