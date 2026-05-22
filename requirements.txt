@@ -1,0 +1,45 @@
+# =============================================================
+# Python dependencies for the β2AR GPCR sonification pipeline.
+#
+# Tested under Python 3.11 (Google Colab default in 2025–2026).
+# Each notebook also auto-installs its own dependencies in its
+# first cell when run on Colab; this file is for local execution.
+#
+# System binaries (NOT installable via pip — install separately):
+#   - FluidSynth + GM SoundFont (notebook 02 — WAV synthesis)
+#   - FFmpeg                    (notebook 04 — video encoding)
+#   - PyMOL (open source build) (notebook 04 — protein rendering)
+# =============================================================
+
+# --- Core scientific stack ---
+numpy>=1.26,<3.0
+pandas>=2.1
+scipy>=1.11
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.4
+tqdm>=4.66
+
+# --- MD analysis ---
+MDAnalysis>=2.8.0
+
+# --- Audio: MIDI generation and signal analysis ---
+pretty_midi==0.2.10
+librosa>=0.10
+soundfile>=0.12
+
+# --- Video assembly (notebook 04) ---
+moviepy==1.0.3
+imageio-ffmpeg>=0.4.9
+imageio[pyav]>=2.31
+pillow>=10.0
+
+# --- PyMOL (notebook 04 protein rendering) ---
+# `pymol-open-source` works on pip on Linux; on macOS/Windows you may
+# need: conda install -c conda-forge pymol-open-source
+pymol-open-source>=2.5
+
+# --- Jupyter (for local notebook execution) ---
+jupyterlab>=4.0
+notebook>=7.0
+ipykernel>=6.28

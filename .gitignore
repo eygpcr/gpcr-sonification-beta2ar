@@ -1,0 +1,106 @@
+# =============================================================
+# .gitignore — β2AR GPCR sonification pipeline
+#
+# This repository is intentionally kept LIGHT. Only source code,
+# documentation, and notebooks are tracked. Large outputs (audio,
+# video, raw MD trajectories) live on Zenodo, not in git.
+# =============================================================
+
+# --- Project outputs (live on Zenodo, not in git) ---
+data/raw/
+data/processed/
+outputs/
+*.wav
+*.mid
+*.mp4
+*.mov
+*.xtc
+*.dcd
+*.trr
+*.nc
+*.pdb
+*.psf
+*.prmtop
+
+# Allow processed metadata CSVs and small reference PDBs explicitly
+!data/processed/.gitkeep
+!data/processed/EXAMPLE_*.csv
+!data/raw/.gitkeep
+
+# Allow small spectro/figure thumbnails if you want to commit a hero image
+# (uncomment the next line if you keep a small banner under assets/)
+# !assets/banner.png
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual environments ---
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# Don't strip notebook outputs from version control — we WANT the
+# reference outputs visible in the notebook for readers who just
+# want to inspect results without running.
+# (If you change your mind, install nbstripout and remove this
+# comment block.)
+
+# --- Operating system clutter ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.*.swp
+.*.swo
+
+# --- IDE / editor ---
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.spyderproject
+.spyproject
+
+# --- Testing / coverage ---
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# --- Documentation builds (if any) ---
+docs/_build/
+site/
